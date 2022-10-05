@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="resultado"></p>
+    <script>
+        let numUser;
+        let numRandom = Math.floor(Math.random()*11);
+        let intentos=1; 
+        
+        numUser = prompt("Introduce un número:");
+        while (numUser != numRandom && intentos < 5) {
+            numUser = prompt("Introduce un número:");
+            intentos++;
+            if(intentos == 5) {
+                document.getElementById("resultado").innerHTML = `Has gastado todos los intentos, el número aleatorio era ${numRandom}`;
+                // break
+            }else if(numUser == numRandom){
+            document.getElementById("resultado").innerHTML = `Has acertado el número aleatorio, tu número era ${numUser} y el aleatorio era ${numRandom}`;
+        }
+    }
+    </script>
+</body>
+</html>

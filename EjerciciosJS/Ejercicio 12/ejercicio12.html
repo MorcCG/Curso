@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let year = prompt("Introduce una fecha para conocer su decada:");
+        let raey = year.split("").reverse().join("");
+        let yearNum = raey[0];
+        let newYear = raey.replace(yearNum, "0");
+        let finalYear =  newYear.split("").reverse().join("");
+        console.log(finalYear);
+
+        let decada = parseInt(finalYear)+9;
+        
+        document.write(`La decada de `+ year + ` es:`);
+        
+        for(i=finalYear; i<=decada; i++){
+            document.write(`<br>` + i);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1
+        let multiplicar
+
+        function inputNum(){
+            num1=prompt("Introduce un número entero: ");
+            multiplicar=num1*10;
+            document.write("La tabla de multiplicar de " + num1 + " es:")
+        }
+        function tablaMulti(){
+            for(i=0; i<=multiplicar; i+=parseInt(num1)){
+            document.write(`<table>
+                                <th>
+                                    <tr>
+                                        <td>`+ i/num1 +`</td>
+                                        <td> x </td>
+                                        <td>`+ num1 +`</td>
+                                        <td> = </td>
+                                        <td>`+ i + `</td>
+                                    </tr>
+                                </th>
+                            </table>`)
+            }
+        }
+        inputNum();
+        tablaMulti();
+    </script>
+</body>
+</html>

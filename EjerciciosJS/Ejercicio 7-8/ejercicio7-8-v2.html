@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let edad;
+        let titulo;
+        let paro;
+
+        function pregunta() {
+            edad = prompt("Introduce tu edad").toUpperCase();
+            titulo = prompt("¿Tienes un titulo universitario?").toUpperCase();
+            paro = prompt("¿Estás en el paro?").toUpperCase();
+
+        }
+        function comprobacion(){
+            if (edad>=18 && (titulo === "SÍ" || titulo === "SI" || paro ==="SÍ" ||paro === "SI")){
+                document.write("Se te ha concedido la beca");
+            }else if(edad>=18 && titulo === "NO" && paro ==="NO"){
+                document.write("No tienes derecho a la beca. No tienes titulo universitario o no estás en el paro");
+            }else{
+                document.write(`Tienes ${edad}, eres menor.  No tienes derecho a beca.`);
+            }
+        }
+        pregunta();
+        comprobacion();
+    </script>
+</body>
+</html>

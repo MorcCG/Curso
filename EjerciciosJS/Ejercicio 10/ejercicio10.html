@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt( prompt("Introduce el primero número:"));
+        let num2 =parseInt( prompt("Introduce el segundo número:"));
+        let operacion = prompt("Indica que operacion deseas hacer (+, -, x, /)");
+
+        // switch (num1, num2, operacion) {
+        //     case "+":
+        //         document.write(num1+num2);
+        //         break;
+        //     case "-":
+        //         document.write(num1-num2);
+        //         break;
+        //     case "x":
+        //         document.write(num1*num2);
+        //         break;
+        //     case "/":
+        //         document.write(num1/num2);
+        //         break;
+
+        //     default:
+        //         document.write("Introduce un valor numerico y/u operación validos")
+        //         break;
+        // }
+        
+        let suma = (num1 + num2);
+        let resta = (num1 - num2);
+        let multiplicacion = (num1 * num2);
+        let division = (num1/num2);
+        switch (num1, num2, operacion) {
+            case "+":
+                document.write(suma);
+                break;
+            case "-":
+                document.write(resta);
+                break;
+            case "x":
+                document.write(multiplicacion);
+                break;
+            case "/":
+                document.write(division);
+                break;
+            default:
+                document.write("Introduce un valor numerico y/u operación validos")
+                break;
+        }
+    </script>
+</body>
+</html>

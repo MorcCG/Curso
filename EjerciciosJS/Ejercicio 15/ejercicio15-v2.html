@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="victoria"></p>
+    <script>
+        let numUser;
+        let numRandom
+        function inputNum(){
+            numUser = prompt("Introduce un número:");
+            numRandom = Math.floor(Math.random()*11);
+        }
+        function comprobar(){
+            while (numUser != numRandom){
+                numUser = prompt("Introduce un número:");
+            }
+            document.getElementById("victoria").innerHTML = `Has acertado el número, tu número era ${numUser} y el número aleatorio ${numRandom}`;
+        }
+        inputNum();
+        comprobar();
+    </script>
+</body>
+</html>

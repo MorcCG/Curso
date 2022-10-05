@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class animal {
+        constructor(
+          nombre,
+          clase,
+          desde,
+          sexo,
+          edad,
+          fechaNacimiento,
+          raza,
+          tamanio,
+          microchip,
+          localidad,
+          situacion,
+          id
+        ) {
+          this.nombre = nombre;
+          this.clase = clase;
+          this.desde = desde;
+          this.sexo = sexo;
+          this.edad = edad;
+          this.fechaNacimiento = fechaNacimiento;
+          this.raza = raza;
+          this.tamanio = tamanio;
+          this.microchip = microchip;
+          this.localidad = localidad;
+          this.situacion = situacion;
+          this.id = id;
+        }
+        hablar() {
+          console.log(this.nombre + "ruido");
+        }
+      }
+      class perro extends animal {
+        constructor(
+          nombre,
+          clase,
+          desde,
+          sexo,
+          edad,
+          fechaNacimiento,
+          raza,
+          tamanio,
+          peso,
+          microchip,
+          localidad,
+          situacion,
+          id
+        ) {
+          super(
+            nombre,
+            clase,
+            desde,
+            sexo,
+            edad,
+            fechaNacimiento,
+            raza,
+            tamanio,
+            microchip,
+            localidad,
+            situacion,
+            id
+          );
+          this.peso = peso;
+        }
+        hablar(){
+            document.write(`${this.nombre} ladra <br>`);
+        }
+        jugar(){
+            document.write(`${this.nombre} busca la pelota <br>`);
+        }
+        edad(){
+        }
+      }
+      class gato extends animal {
+        constructor(
+          nombre,
+          clase,
+          desde,
+          sexo,
+          edad,
+          fechaNacimiento,
+          raza,
+          tamanio,
+          microchip,
+          localidad,
+          situacion,
+          id
+        ) {
+          super(
+            nombre,
+            clase,
+            desde,
+            sexo,
+            edad,
+            fechaNacimiento,
+            raza,
+            tamanio,
+            microchip,
+            localidad,
+            situacion,
+            id
+          );
+        }
+        hablar(){
+            document.write(`${this.nombre} maulla <br>`);
+        }
+        jugar(){
+            document.write((`${this.nombre} te ignora <br>`));
+        }
+      }
+      const einstein = new perro(
+        "Einstein",
+        "Perro",
+        "30-03-2022",
+        "Macho",
+        "1 año y 11 meses",
+        "10/2020",
+        "Pastor catalán",
+        "Mediano",
+        50,
+        "no",
+        "Barcelona",
+        "Refugio",
+        1985
+      );
+      const ramses = new gato(
+        "Ramses",
+        "Gato",
+        "14-09-2022",
+        "Macho",
+        "2 meses y 13 días",
+        "1/2022",
+        "Egipcio",
+        "Mediano",
+        "no",
+        "Barcelona",
+        "Refugio",
+        1279
+        );
+
+      einstein.hablar();
+      einstein.jugar();
+      ramses.hablar();
+      ramses.jugar();
+      console.log(einstein);
+
+      for (valor in einstein){
+        document.write(`<p> ${valor}:${einstein[valor]} </p>`);
+      }
+
+    </script>
+  </body>
+</html>

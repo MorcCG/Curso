@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let year;
+        let raey;
+        let yearNum;
+        let newYear;
+        let finalYear;
+        let decada;
+
+        function inputFecha(){
+            year = prompt("Introduce una fecha para conocer su decada:");
+            document.write(`La decada a la que pertenece el año ${year} es: <br>`)
+        }
+        function decadaOut(){
+            raey = year.split("").reverse().join("");
+            yearNum = raey[0];
+            newYear = raey.replace(yearNum, "0");
+            finalYear =  newYear.split("").reverse().join("");
+            decada = parseInt(finalYear)+9; 
+        }
+
+        function completa(){
+            for(i=finalYear; i<=decada; i++){
+            document.write(`<br>` + i);
+            }
+        }
+        completa(inputFecha(), decadaOut());
+        
+    </script>
+
+</body>
+</html>

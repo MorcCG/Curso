@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dias = prompt("Introduce el número de días para saber que meses tienen esos días:");
+
+        switch (parseInt(dias)){
+            case 30:
+                    document.write("Los meses con 30 días son: abril, junio, septiembre y noviembre");
+                break;
+            case 31: 
+                    document.write("Los meses con 31 días son: enero, marzo, mayo, julio, agosto, octubre y diciembre");
+                break;
+            case 28:
+                if(dias == 28 || dias == 29) {
+                    document.write("El mes que buscas es febrero");
+                }
+                break;
+            default:
+                document.write("Ningún mes tiene tanto días, flipao");
+                break;
+        }
+    </script>
+</body>
+</html>

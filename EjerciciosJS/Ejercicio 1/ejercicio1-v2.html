@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let nombre;
+        let apellido;
+        let edad;
+        let persona;
+
+        function preguntar(){
+            nombre = prompt("Tu nombre: ");
+            apellido = prompt("Tu apellido");
+            edad = prompt ("Tu edad:");
+        
+            persona = `Tu nombre y apellidos son ${nombre} ${apellido}, y tu edad es: ${edad} años`
+            console.log(persona);
+        }
+        preguntar();
+    </script>
+
+</body>
+</html>

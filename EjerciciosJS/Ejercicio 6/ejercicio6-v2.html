@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let edad;
+
+        function inputEdad() {
+            edad = prompt("Introduce tu edad:");
+        }
+        function estudiando(){
+            if (parseInt(edad) <=5) {
+                document.write("Preescolar"); 
+            } else if(parseInt(edad)>=6 && parseInt(edad) <=11){
+                document.write("Primaria");
+            } else if (parseInt(edad)>=12 && parseInt(edad) <=15){
+                document.write("ESO");
+            }else if(parseInt(edad) >=16 && parseInt(edad) <=17){
+                document.write("Bachillerato");
+            }else{
+                document.write("FP o Universidad");
+            }        
+        }
+
+        inputEdad();
+        estudiando();
+
+
+    </script>
+</body>
+</html>

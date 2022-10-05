@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt( prompt("Introduce el primero número:"));
+        let num2 =parseInt( prompt("Introduce el segundo número:"));
+        let operacion = prompt("Indica que operacion deseas hacer (+, -, x, /)");
+
+        function suma(num1,num2){
+            resSuma = num1 + num2
+            document.write(`El resultado de la suma de ${num1} y ${num2} es ${resSuma}`);
+        }
+        function resta(num1,num2){
+            resResta = num1 - num2
+            document.write(`El resultado de la resta de ${num1} y ${num2} es ${resResta}`);
+        }
+        function multiplicacion(num1,num2){
+            resMulti = num1 * num2
+            document.write(`El resultado de la multiplicación de ${num1} y ${num2} es ${resMulti}`);
+        }
+        function division(num1,num2){
+            resDiv = num1 / num2
+            document.write(`El resultado de la división de ${num1} y ${num2} es ${resDiv}`);
+        }
+
+        switch(operacion){
+            case "+":
+                suma(num1,num2);
+                break;
+            case "-":
+                resta(num1,num2);
+                break;
+            case "x":
+                multiplicacion(num1,num2);
+                break;
+            case "/":
+                division(num1,num2);
+                break;
+            default:
+                document.write("Indica un valor valido de operación")
+                break;
+        }
+    </script>
+</body>
+</html>

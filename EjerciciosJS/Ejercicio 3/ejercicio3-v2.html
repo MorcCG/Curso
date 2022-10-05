@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1;
+        let nota2;
+        let nota3;
+        let notafinal;
+        let resultado;
+
+        function notas (){
+            nota1 = prompt("Introduce la primera nota");
+            nota2 = prompt("Introduce la segunda nota");
+            nota3 = prompt("Introduce la tercera nota");
+        }
+
+        function media(){
+            
+            notafinal = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3))/3;        
+            resultado = `La media de tus notas (${nota1}, ${nota2} y ${nota3}) es: ${notafinal}`
+            document.write (resultado);
+        }
+
+        notas();
+        media();
+
+
+    </script>
+</body>
+</html>

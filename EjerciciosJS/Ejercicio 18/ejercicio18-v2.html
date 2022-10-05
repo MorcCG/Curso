@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Estos son los datos de mi empleado</p>
+    <p id="nombreEmpleado"></p>
+    <p id="apellido1Empleado"></p>
+    <p id="apellido2Empleado"></p>
+    <p id="edadEmpleado"></p>
+    <p id="depatamentoEmpleado"></p>
+    <p id="cargoEmpleado"></p>
+
+    <script>
+
+        let empleado ={
+            
+        }
+        function fichaEmpleado(){
+            empleado={
+
+            }
+        }
+
+        function cumplimentarFicha(){
+            empleado.nombre = prompt("Introduce tu nombre:");
+            empleado.apellido1 = prompt("Introduce tu primer apellido:");
+            empleado.apellido2 = prompt("Introduce tu segundo apellido:");
+            empleado.edad = prompt("Introduce tu edad");
+            empleado.departamento = prompt("Introduce tu departamento");
+        }
+        function escribirFicha(){
+            document.getElementById("nombreEmpleado").innerHTML = (`Nombre: `+ empleado.nombre);
+            document.getElementById("apellido1Empleado").innerHTML = (`Primer apellido: `+ empleado.apellido1);
+            document.getElementById("apellido2Empleado").innerHTML = (`Segundo apellido: ` + empleado.apellido2);
+            document.getElementById("edadEmpleado").innerHTML = (`Edad: ` + empleado.edad);
+            document.getElementById("depatamentoEmpleado").innerHTML = (`Departamento: ` + empleado.departamento);
+        }
+        function cargoEmpleado(){
+            empleado.cargo = prompt("Introduce tu cargo");
+            document.getElementById("cargoEmpleado").innerHTML = (`Cargo: ` + empleado.cargo);
+        }
+        fichaEmpleado();
+        cumplimentarFicha();
+        escribirFicha();
+        cargoEmpleado();
+    </script>
+</body>
+</html>

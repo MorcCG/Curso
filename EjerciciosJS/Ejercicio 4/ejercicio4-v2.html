@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num;
+        let doble;
+        let triple;
+        let resultado;
+
+        function numero(){
+            num = prompt("Introduce un número para conocer su doble y triple");
+        }
+        function calculos(){
+            doble = parseInt(num)*2;
+            triple = parseInt(num)*3;
+            resultado = `El doble y triple de ${num} es: <li>${num} x 2 = ${doble}</li><li>${num} x 3 = ${triple}</li>`
+            document.write(resultado);
+        }
+        numero();
+        calculos();
+    </script>    
+</body>
+</html>
