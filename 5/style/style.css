@@ -1,0 +1,128 @@
+body{
+    background-image: url(/Imagen/pexels-irina-iriser-1366957.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;}
+h2{
+text-align: center;
+color: white;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-left: 3%;
+}
+.left{
+    display: inline-block;
+    width: 25%;
+    margin-left: -2%;
+}
+.right{
+    display: inline-block;
+    width: 25%;
+    margin-left: -3%;
+}
+.div-input{
+    background-color: rgba(0, 252, 168, 0.15);
+    padding: 2%;
+    width: 80%;
+    margin-top: 5%;
+}
+legend{
+    color: rgb(255, 255, 255);
+}
+label{
+    font-size: 0.7rem;
+    color: white;
+
+}
+input{
+    width: 95%;
+    height: 20px;
+    border: none;
+    color: rgb(0, 56, 37);
+    margin-left: 2%;
+
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+textarea{
+    border: none;
+    max-width: 95%;
+    min-width: 95%;
+    max-height: 150px;
+    min-height: 150px;
+    resize: none;
+    color: rgb(0, 56, 37);
+    margin-left: 2%;
+
+
+}
+input[type="submit"]{
+    width: 20%;
+    height: 30px;
+    background: rgba(0, 141, 94, 0.568);
+    border: 1px rgb(255, 255, 255) solid;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+}
+#submit1{
+    width: 40%;
+}
+#submit2{
+    width: 30%;
+}
+h3{
+    margin-top: 2.5%;
+    font-size: medium;
+    color: white;
+
+}
+
+.div-iframe{
+    background-color: rgba(0, 252, 168, 0.15);
+    padding: 2%;
+    width: 80%;
+}
+h5{
+    margin-top: -2%;
+    color: white;
+
+}
+iframe{
+    margin-top: -5%;
+    margin-left: 2%;
+
+}
+.rrss{
+    background-color: rgba(0, 252, 168, 0.15);
+    width: 80%;
+    height: 16%;
+    margin-top: 6%;
+}
+p{
+    color: white;
+    padding: 2%;
+}
+.rrss figure{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    background-color: white;
+    justify-content: space-between;
+
+}
+.fa-brands{
+    padding: 3%;
+}
+address{
+    color: white;
+    margin-top: 5%;
+    width: 80%;
+    text-align: center;
+    font-size: 65%;}
