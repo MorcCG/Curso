@@ -1,0 +1,211 @@
+@media screen and (max-width:320px){
+    body{
+        margin: 0%;
+        font-family: 'Roboto', sans-serif;
+        color: #0433BF;
+    }
+    
+    .entrada{
+        width: 100%;
+        height: auto;
+        background-color: #DBBE29;
+        display: flex;
+    }
+    .logo{
+        width: 58%;
+        margin-left: -7%;
+        position: relative;    
+    }
+    .titulo{
+        margin-top: 12%;
+        width: 115%;
+        margin-left: -28%;
+    }
+    main{
+        display: flex;
+    }
+    .menuAside{
+        width: 15%;
+        margin: 0%;
+        /* height:auto; */
+        background-color: #DBBE29;
+        padding-left: 6%;
+    }
+    .menu{
+        height: 80%;
+        padding-top: 5%;
+        line-height: 200%;
+        margin-left: 1%;
+        background-color: #E6D166;
+    }
+    .colorMenu{
+        background-color: #E6D166;
+        margin: 15% 15% 15% 15%;
+        display: none;
+    }
+    .color-menu2{
+        display: block;
+        font-size: x-large;
+        margin-bottom: 40%;
+    }
+    .ulMenu{
+        margin-left:-18% ;
+    }
+    .ulMenu li h1{
+        font-size: 1em;
+        margin: 0% 0% 0% 0%;
+        text-align: center;
+    }
+    .audio{
+        height: 490px;
+        color: #006eff;
+        
+    }
+    .colorAudio{
+        background-color: #E6D166;
+        margin: 15% 15% 0% 15%;
+        display: none;
+    }
+    .color-audio2{
+        display: block;
+        font-size: x-large;
+        margin-bottom: 40%;
+    }
+    .audio ul, li{
+        list-style: none;
+        padding: 0;
+        padding-top: 5px;
+    }
+    .audio ul li audio{
+        width: 80%;
+        height: 20px;
+        padding-left: 10%;
+    }
+    .webs{
+        height: 180px;
+        padding-top: 10px;
+        line-height: 30px;
+        margin-left: -10%;
+    
+    }
+    .colorWebs{
+        background-color: #E6D166;
+        margin: 15% 15% 15% 15%;
+        display: none;
+    }
+    .color-webs2{
+        display: block;
+        font-size: x-large;
+    }
+    .textolateral{
+        text-decoration: none;
+        color: #1233bc;
+        font-weight: 900;
+    }
+    .frase{
+        text-align: center;
+        margin: 0%;
+    }
+    ul{
+        margin: 0%;
+    }
+    .articulo{
+        margin: 0%;
+        width: 82%;
+        /* padding:50px 100px 50px 100px; */
+        text-align: justify;
+        background-color: #faf0c0;
+    }
+    .cajaArticulo{
+        background-color: #F0E3A2;
+        border: 1px #E9D677 solid;
+        border-radius:20px;
+        padding: 30px 50px 30px 50px;
+        margin: 30px 50px 50px 50px;
+    
+    }
+    /*Portada*/
+    #navPortada{
+        width: 100%;
+        height: 50px;
+        background-color: #F0E3A2;
+    }
+    #navPortada ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #navPortada ul li{
+        display: inline-block;
+        text-align: center;
+        margin-top: 0.7%;
+    }
+    #navPortada ul li a{
+        text-decoration: none;
+    }
+    /*Footer*/
+    .pie{
+        width: 100%;
+        height: 100px;
+        background-color: #DBBE29;
+        margin: 0%;
+    }
+    .rrss{
+        margin-left: 9%;
+        margin-top: 0%;
+        width: 80%;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;    
+    }
+    .fa-brands{
+        font-family: "Font Awesome 6 Brands";
+        font-size: xxx-large;
+        font-weight: 400;
+        margin-top: 7%;
+    }
+    /*Articulo 1*/
+    .ep-header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .divInfoCap{
+        display: flex;
+        justify-content: space-between;
+    }
+    video{
+        width: 120%;
+        padding: 5%;
+    }
+    .row-video{
+        display: flex;
+        /* padding: 0%; */
+        width: 100%;
+        margin-left: -3%;}
+    .column-video{
+        flex: 20%;
+        padding: 5%;
+    }
+    /*Banner Publicidad*/
+    .publi-div{
+        float: left;
+        margin-right: 2%;
+    }
+    #toggle{
+        content: url(./imagenes/CerrarPubli.png);
+    }
+    #publi{
+        width: 80%;
+    }
+    #publi1::after{
+        content: url(./imagenes/DuffBanner.jfif);
+        
+    }
+    #toggle:checked ~ #publi1::after{
+        display: none;
+    }
+    #toggle:checked{
+        display: none;
+    }
+}

@@ -1,0 +1,354 @@
+body{
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    color: #0433BF;
+}
+
+.entrada{
+    width: 100%;
+    height: 100px;
+    background-color: #DBBE29;
+    display: flex;
+}
+.logo{
+    width: 34%;
+    margin-left: 10%;
+    position:relative;
+}
+.titulo{
+    margin-top: 1%;
+    margin-right: 17%;
+    width: 67%;}
+main{
+    display: flex;
+}
+.menuAside{
+    width: 18%;
+    margin: 0%;
+    /* height:auto; */
+    background-color: #DBBE29;
+}
+.menu{
+    height: 80%;
+    padding-top: 5%;
+    line-height: 200%;
+    margin-left: 1%;
+    background-color: #E6D166;
+}
+.colorMenu{
+    background-color: #E6D166;
+    margin: 15% 15% 15% 15%;
+}
+.ulMenu{
+    margin-left:-18% ;
+}
+.ulMenu li h1{
+    font-size: 1em;
+    margin: 0% 0% 0% 0%;
+    text-align: center;
+}
+.audio{
+    height: 490px;
+    color: #006eff;
+    
+}
+.colorAudio{
+    background-color: #E6D166;
+    margin: 15% 15% 0% 15%;
+}
+.audio ul, li{
+    list-style: none;
+    padding: 0;
+    padding-top: 5px;
+}
+.audio ul li audio{
+    width: 80%;
+    height: 20px;
+    padding-left: 10%;
+}
+.webs{
+    height: 180px;
+    padding-top: 10px;
+    line-height: 30px;
+    margin-left: -10%;
+
+}
+.colorWebs{
+    background-color: #E6D166;
+    margin: 15% 15% 15% 15%;
+}
+.textolateral{
+    text-decoration: none;
+    color: #1233bc;
+    font-weight: 900;
+}
+.frase{
+    text-align: center;
+    margin: 0%;
+}
+ul{
+    margin: 0%;
+}
+.articulo{
+    margin: 0%;
+    width: 82%;
+    padding:4%;
+    text-align: justify;
+    background-color: #faf0c0;
+}
+.cajaArticulo{
+    background-color: #F0E3A2;
+    border: 8px #E9D677 solid;
+    border-radius:20px;
+    padding: 30px 50px 30px 50px;
+    margin: auto;
+
+}
+
+/*Portada*/
+
+/* @font-face{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('CC Dreamland Lower Italic'), local('CC-Dreamland-Lower-Italic'),
+        url() format(),
+        url('./Fuentes/CCDreamlandLower-Italic.woff') format('woff'),
+        url('./Fuentes/CCDreamlandLower-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+} */
+
+#navPortada{
+    width: 112%;
+    height: 70px;
+    background-color: #e5d3798f;
+    margin-top: -4%;
+    margin-bottom: 2%;
+    margin-left: -6%;
+    border-radius: 7%;
+}
+#navPortada ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+#navPortada ul li{
+    display: inline-block;
+    text-align: center;
+    margin-top: 2.7%;
+    font-size: large;
+}
+#navPortada ul li a{
+    text-decoration: none;
+    color: #0e41d7 !important;
+    font-weight: 600;
+}
+.interlineado{
+    line-height: 120%;
+}
+.colorTexto{
+    color: #1233bc;
+}
+.fuenteTexto{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 102%;
+}
+/*Footer*/
+.pie{
+    width: 100%;
+    height: 100px;
+    background-color: #DBBE29;
+    margin: 0%;
+}
+.rrss{
+    margin-left: 37%;
+    margin-top: 0%;
+    width: 30%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.fa-brands{
+    font-family: "Font Awesome 6 Brands";
+    font-size: xxx-large;
+    font-weight: 400;
+    margin-top: 7%;
+}
+
+/*Temporadas*/
+.row{
+    display: flex;
+    padding: 2%;
+}
+.column{
+    flex: 25%;
+    padding: 2%;
+}
+.season-img{
+    width:100%;
+}
+.season-img:hover{
+    opacity: 0.2;
+    
+}
+.season-img-ok{
+    width:100%;
+}
+.season-img-ok:hover{
+    transform: scale(1.2);
+}
+.season-name, h3{
+    text-align: left;
+    text-decoration: none;
+    font-size: small;
+    padding-top: -1%;
+}
+
+/*Capitulos*/
+.text-center{
+    text-align: center;
+}
+.text-size{
+    font-size: 130%;
+}
+#chapter-table{
+    height: auto;
+}
+.chapter-img-td{
+    width: 30%;
+}
+.chapter-img{
+    width: 100%;
+}
+.chapter-title{
+    width: 40%;
+}
+
+/*Articulo 1*/
+#sinopsis, #curiosidades, #referencias, #galeria{
+    font-size: large;
+} 
+.ep-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.divInfoCap{
+    display: flex;
+    justify-content: space-between;
+}
+.video-color{
+    font-weight: bold;
+}
+video{
+    width: 120%;
+    padding: 5%;
+}
+video:hover{
+    transform: scale(1.5);
+}
+.row-video{
+    display: flex;
+    /* padding: 0%; */
+    width: 100%;
+    margin-left: -3%;}
+.column-video{
+    flex: 20%;
+    padding: 5%;
+}
+
+/*Banner Publicidad*/
+.publi-div{
+    float: left;
+    margin-right: 2%;
+}
+#toggle{
+    content: url(/imagenes/CerrarPubli.png);
+}
+#publi{
+    width: 80%;
+}
+#publi1::after{
+    content: url(/imagenes/DuffBanner.jpg);
+    
+}
+#toggle:checked ~ #publi1::after{
+    display: none;
+}
+#toggle:checked{
+    display: none;
+}
+
+/*Contacto*/
+@font-face{
+    font-family: 'CC Dreamland';
+    src: local('CC Dreamland Lower Italic'), local('CC-Dreamland-Lower-Italic'),
+        url('./Fuentes/CCDreamlandLower-Italic.woff2') format('woff2'),
+        url('./Fuentes/CCDreamlandLower-Italic.woff') format('woff'),
+        url('./Fuentes/CCDreamlandLower-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+.form-title{
+    font-family: 'CC Dreamland';
+    color: black;
+    font-size: small;
+}
+#title1{
+    transform: rotate(-43deg);
+    position: absolute;
+    top: 96px;
+    left: 66px;
+}
+#title2{
+    transform: rotate(-17deg);
+    position: absolute;
+    top: 67px;
+    left: 127px;
+}
+#title3{
+    transform: rotate(21deg);
+    position: absolute;
+    top: 73px;
+    left: 177px;
+}
+#title4{
+    transform: rotate(46deg);
+    position: absolute;
+    top: 103px;
+    left: 225px;
+}
+.contacto{
+    width: 200px;
+    transform: translate(200%,  70%);
+}
+form{
+    margin-left: 153px;
+    margin-top: 285px;
+    width: 200px;
+    position: absolute;
+}
+.form-img{
+    margin:-525px 0px 0px  -195px;
+    height: 843px;
+    width: 700px;
+    background-image: url(./imagenes/FondoContacto.jpg);
+    background-position: top;
+    background-size: contain;
+}
+.input{
+    width: 200%;
+margin-top:15%;}
+input:focus{
+    background-color: red;
+    }
+#message{
+    width: 200%;
+    margin-top:15%;
+}
+
+

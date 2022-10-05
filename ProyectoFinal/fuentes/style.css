@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'CC Dreamland';
+    src: local('CC Dreamland Lower Italic'), local('CC-Dreamland-Lower-Italic'),
+        url('CCDreamlandLower-Italic.woff2') format('woff2'),
+        url('CCDreamlandLower-Italic.woff') format('woff'),
+        url('CCDreamlandLower-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
